@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishSecure - Use Cases</title>
+  <link rel="stylesheet" href="static\style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>PhishSecure</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li class="active"><a href="{{ url_for('usecases') }}">Use Cases</a></li>
+          <li><a href="{{ url_for('urls') }}">Recent URLs</a></li>
+          <li><a href="{{ url_for('social') }}">Identify Phishing</a></li>
+          <li class="dropdown">
+            <a href="#">Help <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown">
+                <a href="#">Report Phishing <i class="fas fa-chevron-right"></i></a>
+                <ul class="submenu">
+                  <li><a href="https://safebrowsing.google.com/safebrowsing/report_phish/" target="_blank">Google Safe Browsing</a></li>
+                  <li><a href="https://support.google.com/websearch/answer/106318" target="_blank">Google Support</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Take Phishing Quiz <i class="fas fa-chevron-right"></i></a>
+                <ul class="submenu">
+                  <li><a href="https://www.phishingbox.com/phishing-iq-test" target="_blank">Phishingbox</a></li>
+                  <li><a href="https://www.intradyn.com/phishing-quiz/" target="_blank">Intradyn</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="download-btn">
+        <a href="static/assets/Phishing Website Identification.pdf" class="btn" download="nofallmagaguide">Download Guide <i class="fas fa-download"></i></a>
+      </div>
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Use Cases Hero Section -->
+  <section class="usecases-hero">
+    <div class="container">
+      <div class="text-center">
+        <h1>Use Case Scenarios of Phishing Attacks</h1>
+        <p>Real-world examples of data breaches caused by phishing attacks</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section id="usecases" class="usecases">
+    <div class="container">
+      <div class="cases-container">
+        <div class="accordion">
+          <div class="accordion-item active">
+            <div class="accordion-header">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Use Case Scenario #1: John Podesta's Email</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="accordion-content">
+              <p><strong>One of the Biggest Data Breaches from Phishing:</strong></p>
+              <p>There was a lot of controversy surrounding the November 2016 election on both sides of the political spectrum. One of the most notable was the hack of John Podesta's Gmail account. Podesta, chairman of presidential candidate Hillary Clinton's democratic election campaign, found himself as one of the country's top phishing attack examples when his account was victimized by a Russian hacker group known as Fancy Bear.</p>
+              <p>The phishers, pretending to be Google, sent an email saying that he needed to change his email after an attempted hack occurred. However, in true phishing attack fashion, the email linked to a malicious website. When someone with access to Podesta's email used the compromised link, the hackers gained access to his account. This led to the eventual release of thousands of Podesta's emails via WikiLeaks in the weeks leading up to the November election.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Use Case Scenario #2: BenefitMall</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="accordion-content">
+              <p><strong>One of the Biggest Data Breaches from Phishing:</strong></p>
+              <p>Among the most recent phishing attacks reported by the media is one that affected BenefitMall, a human resource, employee benefits, and payroll administration solutions company. Between June 2018 and October 2018, the company's website was accessed via employee email login credentials that were exposed during an email phishing attack, according to a press release.</p>
+              <p>The types of consumer information left exposed in the affected mailboxes are thought to include:</p>
+              <ul>
+                <li><i class="fas fa-circle-check"></i> Names</li>
+                <li><i class="fas fa-circle-check"></i> Email addresses</li>
+                <li><i class="fas fa-circle-check"></i> Birth dates</li>
+                <li><i class="fas fa-circle-check"></i> Bank account information</li>
+                <li><i class="fas fa-circle-check"></i> Insurance premium payment information</li>
+              </ul>
+              <p>Although the full extent of the attack is not yet known, BenefitMall works with "a network of more than 20,000 Trusted Advisors" to serve more than "200,000 small and medium-sized businesses." This leaves a potentially enormous group of employees and businesses at risk.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Use Case Scenario #3: Sony Pictures</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="accordion-content">
+              <p><strong>One of the Biggest Data Breaches from Phishing:</strong></p>
+              <p>In retaliation for the creation of the movie "The Interview," a film about the plot to kill North Korea's head of state, a North Korean government-backed hacker group launched a devastating attack on the entertainment giant in November 2014. Using phishing and spear-phishing emails, which contained malware, the attackers gained access to Sony's network and performed months of covert reconnaissance.</p>
+              <p>Once inside, they also threatened company employees and executives, stole confidential data, and disabled thousands of the company's computers. The attack is thought to have cost the company upwards of $100 million.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Use Case Scenario #4: Methodist Hospitals</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="accordion-content">
+              <p><strong>Methodist Hospitals – Gary, Indiana</strong></p>
+              <p>In August of 2019, investigators confirmed Methodist Hospitals' worst fear. A phishing attack compromised more than 68,000 patients' information. The hospital did not discover the breach until June when an employee reported suspicious activity in their email account. The investigation revealed that at least two email accounts had been compromised.</p>
+              <p>The data obtained from each affected patient varied but included the following: names, addresses, health insurance information, Social Security numbers, passport numbers, bank account numbers, electronic signatures, login credentials, dates of birth, treatment information, and insurance information.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Use Case Scenario #5: University of Wisconsin-Parkside</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="accordion-content">
+              <p><strong>The University of Wisconsin-Parkside – Kenosha, Wisconsin</strong></p>
+              <p>In June of 2019, the University of Wisconsin-Parkside was notified of a new bank account. This new account was a result of a phishing attack where an employee was prompted to change the routing numbers of two UW system vendors. Before discovering the issues, the university lost $315,000 in fraudulent bank transfers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About PhishSecure</h2>
+      </div>
+      <div class="about-content">
+        <p>Phishing is an internet scam in which an attacker sends out fake messages that look to come from a trusted source. A URL or file will be included in the mail, which when clicked will steal personal information or infect a computer with a virus.</p>
+        <p>PhishSecure is a project which aims to help reduce phishing attacks by helping internet users authenticate URL links by testing if they are phishing or legitimate. The process of validating a Website URL for phishing or legitimate has gone through several Machine learning models.</p>
+        
+        <div class="team-info">
+          <h3>About Us</h3>
+          <p>This Project is done by Final Year Students of Computer Science and Engineering at Srinivasa Ramanujan Institute of Technology</p>
+          <div class="team-members">
+            <div class="member">S SARFARAAZ AHMED</div>
+            <div class="member">O VINITHA</div>
+            <div class="member">D SHABNAM</div>
+            <div class="member">P SAI REDDY</div>
+          </div>
+          <div class="guided-by">
+            <h4>Guided By</h4>
+            <div class="guide">P CHITRALINGAPPA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section id="examples" class="examples">
+    <div class="container">
+      <div class="section-header">
+        <h2>Phishing Examples</h2>
+        <p>Learn to identify common phishing attempts</p>
+      </div>
+      
+      <div class="examples-slider">
+        <div class="example-slide">
+          <div class="example-image">
+            <img src="static/assets/img/pic1.png" alt="Fake Paypal Security Notice">
+          </div>
+          <div class="example-description">
+            <h3>Fake Paypal Security Notice</h3>
+            <p>Consider this fake Paypal security notice warning potential marks of "unusual log in activity" on their accounts. Notice the suspicious sender email and urgent language designed to create panic.</p>
+            <p class="source">Image Source: (KnowBe4, 2021)</p>
+          </div>
+        </div>
+        
+        <div class="example-slide">
+          <div class="example-image">
+            <img src="static/assets/img/pic2.png" alt="Fake Gmail Login Page">
+          </div>
+          <div class="example-description">
+            <h3>Fake Gmail Login Page</h3>
+            <p>This page looks exactly like the original Gmail login, but the URL is different which makes it phishing. Always check the URL in your browser's address bar before entering credentials.</p>
+            <p class="source">Image Source: (KnowBe4, 2021)</p>
+          </div>
+        </div>
+        
+        <div class="example-slide">
+          <div class="example-image">
+            <img src="static/assets/img/pic3.png" alt="LinkedIn Phishing Attack">
+          </div>
+          <div class="example-description">
+            <h3>LinkedIn Phishing Attack</h3>
+            <p>This LinkedIn InMail appears to have originated from a fake Wells Fargo account. The supplied link leads to a credentials phish hosted on a malicious domain since taken down.</p>
+            <p class="source">Image Source: (KnowBe4, 2021)</p>
+          </div>
+        </div>
+        
+        <div class="example-slide">
+          <div class="example-image">
+            <img src="static/assets/img/pic4.png" alt="Macros Payloads">
+          </div>
+          <div class="example-description">
+            <h3>Macros Payloads</h3>
+            <p>The document above contains Macros Payloads which can also involve files such as doc, pdf, ppt, and pictures in png, jpg which are attached with malicious payloads such that when clicked a malware is activated.</p>
+            <p class="source">Image Source: (KnowBe4, 2021)</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slider-controls">
+        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="google-quiz">
+          <img src="static/assets/img/google.png" alt="Google Logo">
+          <a href="https://phishingquiz.withgoogle.com/" target="_blank" class="btn">Take a Phishing Test by GOOGLE</a>
+        </div>
+        <div class="copyright">
+          <p>Final Year Project &copy; 2024. All Rights Reserved</p>
+          <a href="https://github.com/asrith-reddy/Phishing-detector" target="_blank" class="github-btn">
+            Source Code <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileToggle = document.querySelector('.mobile-toggle');
+      const nav = document.querySelector('nav');
+      
+      mobileToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+      });
+      
+      // Accordion functionality
+      const accordionItems = document.querySelectorAll('.accordion-item');
+      
+      accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        
+        header.addEventListener('click', function() {
+          item.classList.toggle('active');
+        });
+      });
+      
+      // Back to top button
+      const backToTopButton = document.querySelector('.back-to-top');
+      
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      
+      // Simple slider functionality
+      const slides = document.querySelectorAll('.example-slide');
+      const dots = document.querySelectorAll('.dot');
+      const prevBtn = document.querySelector('.prev-btn');
+      const nextBtn = document.querySelector('.next-btn');
+      let currentSlide = 0;
+      
+      function showSlide(n) {
+        slides.forEach(slide => slide.style.display = 'none');
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[n].style.display = 'flex';
+        dots[n].classList.add('active');
+      }
+      
+      prevBtn.addEventListener('click', function() {
+        currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+        showSlide(currentSlide);
+      });
+      
+      nextBtn.addEventListener('click', function() {
+        currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+        showSlide(currentSlide);
+      });
+      
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+          currentSlide = index;
+          showSlide(currentSlide);
+        });
+      });
+      
+      // Initialize with first slide
+      showSlide(0);
+      
+      // Scroll to section function
+      function scrollToSection(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+          window.scrollTo({
+            top: element.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      }
+      
+      // Add event listener for the about link
+      document.querySelector('a[href="#about"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollToSection('about');
+      });
+    });
+  </script>
+</body>
+</html>
